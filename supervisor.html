@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Supervisor Page</title>
+</head>
+<body>
+	<h1>Welcome to Purchase Department</h1>
+	<form action="/supervisorApproval" method="POST">
+		<label for="order"> Order </label>
+		<select name="order">
+		<option order="order"> Select order </option>
+		{% for row in rows %}
+			<option order="order" value={{row[0]}}> {{ row[0] }} </option>
+		{% endfor %}
+		</select>
+		
+		<br></br>
+		<input type="submit" value="Approve">	
+	</form>
+</body>
+</html>

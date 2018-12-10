@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<table>
+<tr>
+	<th> Order </th>
+	<th> User Id </th>
+	<th> Status </th>
+</tr>
+
+  {% for row in rows %}
+  <tr>
+    <td> {{ row[0] }}</td>
+    <td> {{ row[1] }}</td>
+    <td> {{ row[2] }}</td>
+  </tr> 
+  {% endfor %}
+
+</table>
+</body>
+</html>
+

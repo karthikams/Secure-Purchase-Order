@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Purchase Department Page</title>
+</head>
+<body>
+	<h1>Welcome to Purchase Department</h1>
+	<form action="/purchaseVerify" method="POST">
+		<label for="order"> Order </label>
+		<select name="order">
+		<option order="order"> Select order </option>
+		{% for row in rows %}
+			<option order="order"> {{ row[0] }} </option>
+		{% endfor %}
+		</select>
+		
+		<br></br>
+		<input type="submit" value="Verify the order">	
+	</form>
+</body>
+</html>
